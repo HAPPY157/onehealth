@@ -27,7 +27,7 @@ public class MyPlugin extends JavaPlugin implements Listener {
         double currentHealth = player.getHealth();
         double maxHealth = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
         if (currentHealth < maxHealth) {
-            double newHealth = Math.min(currentHealth + 0.5, maxHealth);
+            double newHealth = Math.min(currentHealth + 1.0, maxHealth);
             player.setHealth(newHealth);
         }
     }
